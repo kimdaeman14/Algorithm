@@ -71,8 +71,41 @@
 	- 성능 분석 : 문제를 어떻게하면 좀더 효율적으로 해결할 수 있을 것인가
 
 **성능 분석**
+- 특정 기계에서 수행시간을 측정하는 것은 공정하지 않다. 
+- 조건이 동일한 특정기계에서 측정해야하는데 사실상 불가능하다. 
+- 따라서, `수행연산 횟수`를 비교하는 방식으로 성능을 분석한다.
 
 ![image](https://user-images.githubusercontent.com/34432988/40132627-4979d4e8-5978-11e8-9724-0d0742b93169.png)
+
+- 컴퓨터 알고리즘의 수행시간 분석 
+	- 수행시간은 입력으로 크기가 커지면 커질수록 시간이 많이 걸린다.
+	- 따라서 수행시간은 입력크기 n에 대한 함수로 표현한다. 
+		
+1. 성능 분석의 비교 대상
+	- 산술연산 : add, multiply, exponent, modular, ...
+	- 데이터입출력 : copy, move, save, load, ...
+	- 제어 연산 : if, while, register, ...
+	
+2. 점근적 표기법 
+	- 빅오 표기 : n이라는 값에 대해서 y축인 시간이 얼마나 걸린다를 표시하고 있는 것이고, 아무리 느려져도 상한선인 cg(n)보다 높아질 수 없다.
+	
+	![image](https://user-images.githubusercontent.com/34432988/40133143-db16789c-5979-11e8-93b3-d9ebc2294c21.png)
+
+	![image](https://user-images.githubusercontent.com/34432988/40133355-6ed482b8-597a-11e8-88ca-72813704309b.png)
+
+	- 오메가 표기 : 반대로 f(n)이 n이 어떻게 변한다고 하더라도 하한선인 cg(n)보다 내려갈 수 없다. 
+	  	
+		     `3n^2-4n+1=오메가(n)`
+	
+	![image](https://user-images.githubusercontent.com/34432988/40133530-08e34c72-597b-11e8-81f6-9c658332b224.png)
+	
+	- 쎄타 표기 : 빅오와 오메가표기를 같이 쓰는 것. 
+		
+	![image](https://user-images.githubusercontent.com/34432988/40133497-f147c89a-597a-11e8-8cb1-f92628628f86.png)
+
+
+
+
 
 
 
@@ -82,7 +115,7 @@
 
 **찐하게**
 
-``단어강조``
+`단어강조`
 
 [링크](http://naver.com)
 
